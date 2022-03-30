@@ -1,0 +1,30 @@
+* {
+  font-family: "Bellefair", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-color: #0b0d17;
+}
+#container {
+  min-height: 100vh;
+  max-width: 1440px;
+  transition: background 1s ease;
+}
+
+.-destination {
+  background: url("./assets/destination/background-destination-desktop.jpg")
+    #0b0d17 no-repeat;
+}
+.-crew {
+  min-height: 100vh;
+  background: url("./assets/crew/background-crew-desktop.jpg") #0b0d17 no-repeat;
+}
+.-technology {
+  background: url("./assets/technology/background-technology-desktop.jpg")
+    #0b0d17 no-repeat;
+}

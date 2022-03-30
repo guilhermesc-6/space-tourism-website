@@ -1,0 +1,109 @@
+.main-crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem 0 10rem;
+  margin-top: 5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .texts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 400;
+        align-self: flex-start;
+        font-size: 1.75rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+
+        span {
+          opacity: 0.25;
+        }
+      }
+      .infos {
+        margin-top: 5rem;
+        letter-spacing: 0;
+        h5 {
+          font-size: 2rem;
+          line-height: 1rem;
+          text-transform: uppercase;
+          opacity: 0.25;
+        }
+        h4 {
+          font-size: 56px;
+          font-weight: 400;
+          text-transform: uppercase;
+          line-height: 178%;
+          margin-top: 1rem;
+        }
+        p {
+          margin-top: 1rem;
+          line-height: 178%;
+          font-size: 1.1rem;
+          color: #d0d6f9;
+        }
+      }
+      .btns {
+        margin-top: 6rem;
+        display: flex;
+        align-self: self-start;
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          input {
+            margin: 0 1rem;
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            opacity: 0.17;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 0.5;
+            }
+
+            &:checked {
+              opacity: 1;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .image {
+      // position: relative;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   width: 520px;
+      //   height: 720px;
+      //   background: url("../../assets/crew/image-douglas-hurley.webp") no-repeat;
+      // }
+    }
+  }
+}
