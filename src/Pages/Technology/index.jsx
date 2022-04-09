@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import launchPortrait from "../../assets/technology/image-launch-vehicle-portrait.jpg";
 import capsulePortrait from "../../assets/technology/image-space-capsule-portrait.jpg";
 import spaceportPortrait from "../../assets/technology/image-spaceport-portrait.jpg";
+import launchLandscape from "../../assets/technology/image-launch-vehicle-landscape.jpg";
+import capsuleLandscape from "../../assets/technology/image-space-capsule-landscape.jpg";
+import spaceportLandscape from "../../assets/technology/image-spaceport-landscape.jpg";
 import "./style.scss";
 import data from "../../assets/data.json";
 
@@ -68,10 +71,10 @@ function Technology() {
             className="landscape"
             src={
               title === "Spaceport"
-                ? spaceportPortrait
+                ? spaceportLandscape
                 : title === "Space capsule"
-                ? capsulePortrait
-                : launchPortrait
+                ? capsuleLandscape
+                : launchLandscape
             }
             alt={title}
           />

@@ -14,24 +14,25 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    h3 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 400;
+      align-self: flex-start;
+      font-size: 1.75rem;
+      line-height: 2.1rem;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+
+      span {
+        opacity: 0.25;
+      }
+    }
     .texts {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      h3 {
-        font-family: "Barlow Condensed", sans-serif;
-        font-weight: 400;
-        align-self: flex-start;
-        font-size: 1.75rem;
-        line-height: 2.1rem;
-        letter-spacing: 0.3rem;
-        text-transform: uppercase;
 
-        span {
-          opacity: 0.25;
-        }
-      }
       .infos {
         margin-top: 5rem;
         letter-spacing: 0;
@@ -94,16 +95,70 @@
         }
       }
     }
+  }
+}
 
-    .image {
-      // position: relative;
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   width: 520px;
-      //   height: 720px;
-      //   background: url("../../assets/crew/image-douglas-hurley.webp") no-repeat;
-      // }
+@media screen and (max-width: 780px) {
+  .main-crew {
+    padding: 0 2rem 0;
+
+    .content {
+      flex-direction: column;
+
+      .texts {
+        text-align: center;
+
+        .btns {
+          align-self: center;
+        }
+      }
+
+      .image {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        margin-top: 2.5rem;
+        img {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .main-crew {
+    margin-top: 2rem;
+
+    .content {
+      position: relative;
+      h3 {
+        font-size: 1rem;
+        align-self: center;
+      }
+      .texts {
+        flex-direction: column-reverse;
+        margin-top: 22rem;
+        .infos {
+          h5 {
+            font-size: 1.2rem;
+          }
+          h4 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .image {
+        position: absolute;
+        top: 2rem;
+        img {
+          width: 250px;
+        }
+      }
     }
   }
 }

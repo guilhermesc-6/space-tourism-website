@@ -67,7 +67,7 @@ function Destination() {
           />
         </div>
         <div className="texts">
-          <div className="menu">
+          <div className="menu" translate="no">
             <ul>
               <li
                 className={title === "Moon" ? "active" : ""}

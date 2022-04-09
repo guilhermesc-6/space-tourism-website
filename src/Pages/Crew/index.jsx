@@ -30,10 +30,10 @@ function Crew() {
   return (
     <div className="main-crew">
       <div className="content">
+        <h3>
+          <span>02</span> Meet your crew
+        </h3>
         <div className="texts">
-          <h3>
-            <span>02</span> Meet your crew
-          </h3>
           <div className="infos">
             <h5>{role}</h5>
             <h4>{name}</h4>

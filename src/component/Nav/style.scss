@@ -6,6 +6,11 @@
   height: 6rem;
   font-family: "Barlow Condensed", sans-serif;
 
+  .hamburger-btn {
+    display: none;
+    cursor: pointer;
+  }
+
   .rectangle {
     width: 473px;
     height: 1px;
@@ -27,6 +32,11 @@
     backdrop-filter: blur(81.5485px);
     -mos-webkit-backdrop-filter: blur(81.5485px);
     position: relative;
+
+    .close-btn {
+      display: none;
+      cursor: pointer;
+    }
 
     .nav-ul {
       display: flex;
@@ -65,6 +75,96 @@
 
           background-color: #ffffff;
           opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .main-header {
+    .rectangle {
+      display: none;
+    }
+    nav {
+      width: 28rem;
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  @supports not (backdrop-filter: blur(81px)) {
+    .main-header {
+      nav {
+        background: rgba(13, 13, 13, 0.8);
+      }
+    }
+  }
+  .main-header {
+    padding-left: 2rem;
+    .logo {
+      img {
+        width: 40px;
+      }
+    }
+    .hamburger-btn {
+      display: block;
+      margin-right: 2rem;
+      transition: all 0.5s ease;
+
+      &.active {
+        transform: translateX(100px);
+      }
+    }
+    nav {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 70%;
+      height: 667px;
+      padding: 0;
+      align-items: flex-start;
+      z-index: 1;
+      backdrop-filter: blur(60px);
+      transform: translateX(100%);
+      transition: all 0.7s ease-in-out;
+
+      &.nav-active {
+        transform: translateX(0);
+      }
+
+      .close-btn {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+      }
+      .nav-ul {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 10rem 0 20rem;
+
+        li {
+          font-size: 1.5rem;
+          width: 100%;
+          margin: 1rem 0;
+
+          &.active::after {
+            content: "";
+            width: 4px;
+            height: 100%;
+            left: 100%;
+            top: 0;
+            transform: translateX(-100%);
+          }
+          &:hover::before {
+            width: 4px;
+            height: 100%;
+            left: 100%;
+            top: 0;
+          }
         }
       }
     }
