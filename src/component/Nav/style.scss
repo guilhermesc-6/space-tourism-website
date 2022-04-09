@@ -113,6 +113,7 @@
 
       &.active {
         transform: translateX(100px);
+        display: none;
       }
     }
     nav {
@@ -120,15 +121,19 @@
       right: 0;
       top: 0;
       width: 70%;
-      height: 667px;
+      height: 100%;
       padding: 0;
       align-items: flex-start;
       z-index: 1;
       backdrop-filter: blur(60px);
       transform: translateX(100%);
+      opacity: 0;
+      display: none;
       transition: all 0.7s ease-in-out;
 
       &.nav-active {
+        opacity: 1;
+        display: block;
         transform: translateX(0);
       }
 

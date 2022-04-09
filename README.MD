@@ -26,12 +26,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### (Home Page)
+
+![](./Screenshot-1.png)
+
+#### (Destination Page)
+
+![](./Screenshot-2.png)
 
 ### Links
 
-- Solution URL: [solution URL] (https://github.com/guilhermesc-6/space-tourism-website)
-- Live Site URL: [live site URL] (https://guilherme-space-website.netlify.app/)
+- Solution URL: [solution URL](https://github.com/guilhermesc-6/space-tourism-website)
+- Live Site URL: [live site URL](https://guilherme-space-website.netlify.app/)
 
 ## My process
 
