@@ -105,6 +105,14 @@
         width: 150px;
         height: 150px;
         font-size: 1.4rem;
+
+        &:hover::after {
+          width: 225px;
+          height: 225px;
+          border-radius: 50%;
+          background-color: #fff;
+          opacity: 0.1;
+        }
       }
     }
   }
