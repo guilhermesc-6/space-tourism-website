@@ -28,11 +28,11 @@ Users should be able to:
 
 #### (Home Page)
 
-![](./Screenshot-1.png)
+![home](./src/assets/Screenshot-1.png)
 
 #### (Destination Page)
 
-![](./Screenshot-2.png)
+![destination](./src/assets/Screenshot-2.png)
 
 ### Links
 
